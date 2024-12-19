@@ -50,3 +50,16 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let personType = "Employee";
+let benefits = "full-access";
+
+if(personType == "Enrolled Member"){
+    benefits = "one-on-one";
+} else if(personType == "Employee"){
+    benefits = "full-access";
+} else if(personType == "Subscriber"){
+    benefits = "partial-access";
+} else {
+    benefits = "subscribe";
+}
